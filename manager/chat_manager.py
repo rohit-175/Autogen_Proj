@@ -1,11 +1,12 @@
 from autogen import GroupChat, GroupChatManager
-from agents.history_agent import history_agent
+from agents.social_studies_agent import social_studies_agent
+from agents.sci_tech_agent import science_agent
 from agents.reviewer_agent import reviewer_agent
 from agents.user_agent import user_proxy
 from utils.config import autogen_llm_config
 
 groupchat = GroupChat(
-    agents=[user_proxy, history_agent, reviewer_agent],
+    agents=[user_proxy, social_studies_agent, science_agent, reviewer_agent],
     messages=[],
     max_round=3
 )
