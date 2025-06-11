@@ -8,5 +8,5 @@ social_studies_agent = AssistantAgent(
         "Answer science and technology questions concisely, with key facts and clarity. " 
         "Avoid excessive detail unless specifically asked. Focus on the core answer. "
     ),
-    llm_config=autogen_llm_config,
+    llm_config=autogen_llm_config
 )
